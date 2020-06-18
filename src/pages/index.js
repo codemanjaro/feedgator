@@ -40,7 +40,7 @@ export const HomePage = ({ data }) => {
       <h2 className="cent"><DarkModeToggle/></h2>
       
       <h2 className="f5 fw1">
-      A minimalistic Gatsby blog rendering your Future Dream Job!<br/> Most of the job list a Remote due to pandamic & for more resource visit href={'https://www.cosmotory.xyz' + Cosmotory} 
+      A minimalistic Gatsby blog rendering your Future Dream Job!<br/> Most of the job list a Remote due to pandamic & for more resource visit <a href={'https://www.cosmotory.xyz'}>Cosmotory</a>
       </h2>   
     </header>
     
