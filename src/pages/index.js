@@ -128,18 +128,22 @@ export default HomePage
 
 export const query = graphql`
   {
-    oneGraph {
-      authentic: rss {
-        rss2Feed(url: "https://authenticjobs.com/?feed=job_feed") {
-          ...RSSFeedFragment
-        }
-      }      
+    oneGraph {    
       hackernews: rss {
         rss2Feed(url: "https://rsshub.app/hackernews/jobs") {
           ...RSSFeedFragment
         }
       }
-    
+      authentic: rss {
+        rss2Feed(url: "https://authenticjobs.com/?feed=job_feed") {
+          ...RSSFeedFragment
+        }
+      }  
+      smashing: rss {
+        rss2Feed(url: "https://www.smashingmagazine.com/jobs/feed/") {
+          ...RSSFeedFragment
+        }
+      }     
     }
   }
 
