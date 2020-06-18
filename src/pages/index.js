@@ -129,8 +129,8 @@ export default HomePage
 export const query = graphql`
   {
     oneGraph {
-      github: rss {
-        rss2Feed(url: "https://jobs.github.com/positions.atom") {
+      authentic: rss {
+        rss2Feed(url: "https://authenticjobs.com/?feed=job_feed") {
           ...RSSFeedFragment
         }
       }      
