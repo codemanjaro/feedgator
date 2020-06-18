@@ -36,11 +36,11 @@ export const HomePage = ({ data }) => {
   
   <div id="root" className="lh-copy mw6 center ph3">
     <header className="tc">
-      <h1 className="awesome 1 lh-title mb0">Feedgator</h1>
+      <h1 className="awesome 1 lh-title mb0">Jobgator</h1>
       <h2 className="cent"><DarkModeToggle/></h2>
       
       <h2 className="f5 fw1">
-      A minimalistic Gatsby blog rendering my favourite RSS feeds(Firefox,Github Trending,CSS Tricks)
+      A minimalistic Gatsby blog rendering Job 
       </h2>   
     </header>
     
@@ -129,23 +129,8 @@ export default HomePage
 export const query = graphql`
   {
     oneGraph {
-      cssWizardry: rss {
-        rss2Feed(url: "https://csswizardry.com/feed") {
-          ...RSSFeedFragment
-        }
-      }
-      codepen: rss {
-        rss2Feed(url: "https://blog.codepen.io/feed/") {
-          ...RSSFeedFragment
-        }
-      }
-      csstrick: rss {
-        rss2Feed(url: "http://feeds.feedburner.com/CssTricks") {
-          ...RSSFeedFragment
-        }
-      }
-      mozilla: rss {
-        rss2Feed(url: "https://hacks.mozilla.org/feed/") {
+      hackernews: rss {
+        rss2Feed(url: "https://rsshub.app/hackernews/jobs") {
           ...RSSFeedFragment
         }
       }
