@@ -130,7 +130,7 @@ export const query = graphql`
   {
     oneGraph {
       github: rss {
-        rss2Feed(url: "https://feeds.feedburner.com/githubjobs") {
+        rss2Feed(url: "https://jobs.github.com/positions.atom") {
           ...RSSFeedFragment
         }
       }      
