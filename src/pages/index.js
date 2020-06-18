@@ -135,7 +135,7 @@ export const query = graphql`
         }
       }
       github: rss {
-        rss2Feed(url: "http://feeds.feedburner.com/githubjobs") {
+        rss2Feed(url: "feeds.feedburner.com/githubjobs") {
           ...RSSFeedFragment
         }
       }
