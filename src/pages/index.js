@@ -129,13 +129,13 @@ export default HomePage
 export const query = graphql`
   {
     oneGraph {
-      hackernews: rss {
-        rss2Feed(url: "https://rsshub.app/hackernews/jobs") {
-          ...RSSFeedFragment
-        }
-      }
       github: rss {
         rss2Feed(url: "https://feeds.feedburner.com/githubjobs") {
+          ...RSSFeedFragment
+        }
+      }      
+      hackernews: rss {
+        rss2Feed(url: "https://rsshub.app/hackernews/jobs") {
           ...RSSFeedFragment
         }
       }
