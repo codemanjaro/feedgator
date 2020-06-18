@@ -40,7 +40,7 @@ export const HomePage = ({ data }) => {
       <h2 className="cent"><DarkModeToggle/></h2>
       
       <h2 className="f5 fw1">
-      A minimalistic Gatsby blog rendering Job 
+      A minimalistic Gatsby blog rendering your Future Dream Job! 
       </h2>   
     </header>
     
@@ -131,6 +131,11 @@ export const query = graphql`
     oneGraph {
       hackernews: rss {
         rss2Feed(url: "https://rsshub.app/hackernews/jobs") {
+          ...RSSFeedFragment
+        }
+      }
+      github: rss {
+        rss2Feed(url: "http://feeds.feedburner.com/githubjobs") {
           ...RSSFeedFragment
         }
       }
